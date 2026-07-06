@@ -55,17 +55,17 @@
   .headline {
     opacity: 0;
     animation: fadeIn 1.4s ease forwards 0.8s;
-    margin-bottom: 5vh;
+    margin-bottom: 6vh;
   }
 
   .headline h1 {
     font-family: 'Fraunces', serif;
     font-weight: 300;
-    font-size: clamp(1.75rem, 4vw, 3rem);
-    line-height: 1.24;
+    font-size: clamp(2.1rem, 4.6vw, 3.4rem);
+    line-height: 1.22;
     color: var(--navy);
     letter-spacing: -0.01em;
-    max-width: 20ch;
+    max-width: 28ch;
     margin: 0 auto;
   }
 
@@ -78,8 +78,8 @@
   .vision-statement {
     opacity: 0;
     animation: fadeIn 1.2s ease forwards 1.4s;
-    margin-bottom: 7vh;
-    max-width: 38ch;
+    margin-bottom: 8vh;
+    max-width: 40ch;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,9 +94,9 @@
 
   .vision-statement p {
     font-family: 'Inter', sans-serif;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 1.65;
     color: rgba(22,34,59,0.8);
     letter-spacing: 0.005em;
   }
@@ -114,36 +114,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.1rem;
   }
 
-  .cta-btn {
-    display: inline-block;
-    background: var(--navy);
-    color: var(--cream);
-    border: none;
-    border-radius: 2px;
-    padding: 1rem 2.6rem;
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-  }
-
-  .cta-btn:hover {
-    background: var(--rust);
-    transform: translateY(-1px);
-  }
-
-  .cta-note {
-    font-size: 11.5px;
+  .cta-secondary {
+    font-size: 13px;
     color: var(--gray);
     letter-spacing: 0.02em;
   }
+
+  .cta-primary {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--navy);
+    letter-spacing: 0.005em;
+  }
+
+  .cta-email {
+    display: inline-block;
+    color: var(--rust);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(181,80,46,0.4);
+    padding: 0.3rem 0.1rem;
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+
+  .cta-email:hover { border-color: var(--rust); color: var(--rust); }
+
+
 
   /* MODAL */
   .modal-overlay {
@@ -216,75 +216,6 @@
     line-height: 1.25;
   }
 
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-
-  .contact-form input {
-    background: transparent;
-    border: 1px solid var(--line);
-    border-radius: 2px;
-    padding: 0.9rem 1rem;
-    color: var(--navy);
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    outline: none;
-    transition: border-color 0.25s ease;
-    width: 100%;
-  }
-
-  .contact-form input::placeholder { color: rgba(122,122,114,0.6); }
-  .contact-form input:focus { border-color: var(--navy); }
-
-  .contact-form button {
-    margin-top: 0.5rem;
-    background: var(--navy);
-    color: var(--cream);
-    border: none;
-    border-radius: 2px;
-    padding: 1rem;
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background 0.25s ease;
-    width: 100%;
-  }
-
-  .contact-form button:hover { background: var(--rust); }
-  .contact-form button:disabled { opacity: 0.55; cursor: not-allowed; }
-
-  .modal-success {
-    display: none;
-    text-align: center;
-    padding: 0.8rem 0;
-  }
-
-  .modal-success p:first-child {
-    font-family: 'Fraunces', serif;
-    font-size: 1.3rem;
-    color: var(--navy);
-    margin-bottom: 0.6rem;
-  }
-
-  .modal-success p:last-child {
-    font-size: 13.5px;
-    color: var(--gray);
-    line-height: 1.6;
-  }
-
-  .modal-error {
-    display: none;
-    font-size: 12px;
-    color: var(--rust);
-    margin-top: 0.8rem;
-    line-height: 1.5;
-  }
-
   /* FOOTER */
   .footer-wrap {
     position: fixed;
@@ -306,31 +237,25 @@
   .footer-links button {
     background: none;
     border: none;
-    padding: 0;
+    padding: 0.5rem;
+    margin: -0.5rem;
     font-family: 'Inter', sans-serif;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 500;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: rgba(22,34,59,0.45);
+    color: rgba(22,34,59,0.6);
     cursor: pointer;
     transition: color 0.2s ease;
   }
 
   .footer-links button:hover { color: var(--rust); }
 
-  .footer-links .dot {
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background: rgba(122,122,114,0.4);
-  }
-
   .footer {
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: rgba(122,122,114,0.45);
+    color: rgba(122,122,114,0.6);
     white-space: nowrap;
   }
 
@@ -409,7 +334,6 @@
   }
 
   @media (max-width: 400px) {
-    .cta-btn    { padding: 0.9rem 1.8rem; }
     .modal-box  { padding: 2.6rem 1.8rem 2.2rem; }
   }
 
@@ -435,49 +359,26 @@
   </div>
 
   <div class="headline">
-    <h1>Revenue used to require humans.<br><em>It doesn&rsquo;t anymore.</em></h1>
+    <h1>Autonomous growth is coming<br>to <em>local commerce.</em></h1>
   </div>
 
   <div class="vision-statement">
     <span class="rule"></span>
-    <p>Minla builds the revenue graph multisite local commerce runs on, and acts on it.</p>
+    <p>Always-on AI agents that sense business and market conditions, track revenue pace, and turn opportunities into measurable actions.</p>
   </div>
 
   <div class="cta-wrap">
-    <button class="cta-btn" id="openContactBtn">Get in touch</button>
-    <p class="cta-note">Onboarding a small number of pilots this quarter.</p>
+    <p class="cta-secondary">Building with a select group of early customers.</p>
+    <p class="cta-primary">Want to learn more? <a href="mailto:hello@minlalabs.com" class="cta-email">hello@minlalabs.com</a></p>
   </div>
 
 </div>
 
 <div class="footer-wrap">
   <div class="footer-links">
-    <button type="button" data-modal="termsModal">Terms</button>
-    <span class="dot"></span>
-    <button type="button" data-modal="privacyModal">Privacy &amp; Security</button>
+    <button type="button" data-modal="termsModal">Terms of Service</button>
   </div>
   <p class="footer">&copy; 2026 Minla Labs, Inc.</p>
-</div>
-
-<!-- CONTACT MODAL -->
-<div class="modal-overlay" id="contactModal">
-  <div class="modal-box">
-    <button class="modal-close" id="closeContactBtn" aria-label="Close">&times;</button>
-    <p class="modal-eyebrow">Limited pilot access</p>
-    <h3 class="modal-title">Let&rsquo;s talk about<br>your revenue target.</h3>
-    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xjgqjlny" method="POST">
-      <input type="text"  name="name"     placeholder="Your name"     required>
-      <input type="email" name="email"    placeholder="Work email"    required>
-      <input type="text"  name="business" placeholder="Business name" required>
-      <input type="text"  name="industry" placeholder="Industry"      required>
-      <button type="submit" id="contactSubmitBtn">Get in touch</button>
-    </form>
-    <p class="modal-error" id="contactError">Something went wrong &mdash; email us directly at sid@minlalabs.com</p>
-    <div class="modal-success" id="contactSuccess">
-      <p>You&rsquo;re on the list.</p>
-      <p>We&rsquo;ll reach out shortly to scope your pilot.</p>
-    </div>
-  </div>
 </div>
 
 <!-- TERMS MODAL -->
@@ -485,95 +386,99 @@
   <div class="modal-box">
     <button class="modal-close" data-close aria-label="Close">&times;</button>
     <p class="modal-eyebrow">Legal</p>
-    <h3 class="modal-title">Terms &amp; Conditions</h3>
+    <h3 class="modal-title">Terms of Service</h3>
     <div class="modal-body">
-      <h4>Site status</h4>
-      <p>This website is a pre-launch informational page for Minla Labs, Inc. (&ldquo;Minla,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;). It does not offer any product for sale or subscription. Submitting the pilot request form expresses interest only and creates no contractual obligation on either side.</p>
-      <h4>Content</h4>
-      <p>All text, graphics, and branding on this site are the property of Minla Labs, Inc. and may not be reproduced without permission.</p>
-      <h4>No warranty</h4>
-      <p>This site and its contents are provided &ldquo;as is,&rdquo; without warranties of any kind, express or implied.</p>
-      <h4>Changes</h4>
-      <p>We may update this page, and these terms, at any time as the product takes shape. A full Terms of Service will accompany general availability.</p>
-      <h4>Contact</h4>
-      <p>Questions about these terms can be sent to <a href="mailto:sid@minlalabs.com">sid@minlalabs.com</a>.</p>
-    </div>
-  </div>
-</div>
+      <p>Minla Labs, Inc. (&ldquo;Minla Labs&rdquo;), a Delaware company, and you, the customer that has signed up for the Services and agreed to the terms of a Service Supplement (the &ldquo;Service Supplement&rdquo;), issued pursuant to and under the Master Services Agreement (the &ldquo;MSA&rdquo;) between the parties, including these Terms of Service (&ldquo;TOS&rdquo;) (&ldquo;Customer&rdquo;), agree as set forth below. Minla Labs and Customer are each a &ldquo;Party&rdquo; and together the &ldquo;Parties.&rdquo; These TOS are effective as of the date Customer executes the Service Supplement or clicks &ldquo;Accept&rdquo; (the &ldquo;Effective Date&rdquo;). These TOS, including the SLA and Support terms below, are subject to change without notice and will be posted on the Minla Labs website; continued use of the Services after such changes constitutes acceptance of the then-current TOS.</p>
+      <p>By clicking &ldquo;Accept,&rdquo; Customer acknowledges having read the Service Supplement and these TOS in their entirety and agrees to be bound by, and held liable for noncompliance with, the Service Supplement and these TOS. If Customer does not agree, Customer must not click &ldquo;Accept&rdquo; or otherwise access or use the Services. These TOS contain a class action / jury trial waiver.</p>
 
-<!-- PRIVACY MODAL -->
-<div class="modal-overlay info-modal" id="privacyModal">
-  <div class="modal-box">
-    <button class="modal-close" data-close aria-label="Close">&times;</button>
-    <p class="modal-eyebrow">Legal</p>
-    <h3 class="modal-title">Privacy &amp; Security</h3>
-    <div class="modal-body">
-      <h4>What we collect</h4>
-      <p>This site only collects what you choose to give us through the pilot request form: name, work email, business name, and industry.</p>
-      <h4>How we use it</h4>
-      <p>We use this information solely to follow up about piloting Minla with your business. We do not sell or rent your information to third parties.</p>
-      <h4>How it's handled</h4>
-      <p>Submissions are transmitted over an encrypted connection and stored with a third-party form provider. Access is limited to the Minla founding team.</p>
-      <h4>Your choices</h4>
-      <p>You can request that we delete your information at any time by emailing us.</p>
+      <h4>1. Definitions</h4>
+      <p><strong>AI Functionalities</strong> means any functions of the Services generated, created, or provided, in whole or in part, using machine learning models.</p>
+      <p><strong>Authorized User</strong> means an employee or agent of Customer using the Services under these TOS.</p>
+      <p><strong>Customer Data</strong> means information used, processed, or stored by or on behalf of Customer, or provided to Minla Labs for such processing or storage, and any information derived from it during Customer&rsquo;s use of the Services.</p>
+      <p><strong>Confidential Information</strong> means information disclosed by one Party to the other that is designated confidential or should reasonably be understood as such, including technical or creative know-how, designs, specifications, source and object code, and related materials. It excludes information that is or becomes public without breach of obligation, was already known to the receiving Party, was lawfully received from a third party, or was independently developed without reference to the disclosing Party&rsquo;s Confidential Information.</p>
+      <p><strong>Process</strong> means the retrieval of Customer-specified data from a Customer-designated source and its transmission to another Customer-designated destination by the Services.</p>
+      <p><strong>Services</strong> means Minla Labs&rsquo;s software-as-a-service platform and any included services or documentation described below.</p>
+      <p><strong>Service Supplement</strong> means a supplement entered into under the MSA that includes Minla Labs&rsquo;s Privacy Statement, fees and pricing, the Data Processing Addendum, and any other agreed terms.</p>
+      <p><strong>Updates</strong> mean modifications, bug fixes, patches, and other error corrections to the Services, which form part of the Services and are subject to these TOS.</p>
+      <p><strong>Upgrades</strong> mean enhancements that provide additional features or functionality, which may carry additional Fees and which, once purchased or accessed, form part of the Services subject to the MSA, Service Supplement, and these TOS.</p>
+
+      <h4>2. Services</h4>
+      <p><strong>(a) License Grant.</strong> Minla Labs grants Customer a limited, non-exclusive, revocable, non-transferable license, without right of sublicense, to access and use the Services (and to permit Authorized Users to do so) for Customer&rsquo;s internal business purposes during the Term, subject to payment of Fees.</p>
+      <p><strong>(b) Restrictions on Use.</strong> Customer may not alter the Services or remove proprietary notices, and Customer may not (and may not permit others to): reverse engineer or decompile the Services; modify or create derivative works from the Services; use the Services to infringe any right or violate any law; store or transmit unlawful, infringing, or tortious material; interfere with the integrity or performance of the Services; attempt unauthorized access to the Services or related systems; copy, distribute, sell, rent, or otherwise exploit the Services; or resell, sublicense, or provide third-party access to the Services.</p>
+      <p><strong>(c) Reservation of Rights.</strong> Minla Labs reserves all rights not expressly granted. Nothing in this Agreement grants Customer any intellectual property rights beyond the limited license expressly given.</p>
+      <p><strong>(d) Updates.</strong> Minla Labs may develop and provide Updates that modify features, workflows, or functionality (including AI Functionalities) over time, and may modify or delete features entirely. Minla Labs has no obligation to provide Updates or maintain any specific feature, and is not liable for any modification, suspension, or discontinuance of the Services.</p>
+      <p><strong>(e) License Compliance.</strong> Minla Labs may audit Customer&rsquo;s license compliance during the Term, and Customer agrees to cooperate.</p>
+      <p><strong>(f) Suspension of the Services.</strong> Minla Labs may suspend, terminate, or deny access to the Services, without liability, in order to: comply with a governmental or judicial order or law enforcement request; respond to an uncured payment default after ten business days&rsquo; notice; address a good-faith belief that Customer or an Authorized User has misused or exceeded the scope of the Services; or address a security risk or other disruption. Suspension does not excuse Fees owed, and Minla Labs will restore access once the underlying issue is resolved to its satisfaction.</p>
+
+      <h4>3. Customer Obligations</h4>
+      <p><strong>(a) Use of Service.</strong> Minla Labs will provide administrative access enabling Customer and Authorized Users to access Customer&rsquo;s designated database (&ldquo;Database&rdquo;). Customer is responsible for all use of the Services occurring through the Database or credentials issued by Customer&rsquo;s administrators, whether authorized or not, and must keep credentials confidential.</p>
+      <p><strong>(b) Retrieval of Customer Data.</strong> Customer is solely responsible for obtaining all rights, licenses, and consents necessary to access and use any third-party data source and data retrieved from it, and may not use the Services to retrieve data without such authorization.</p>
+      <p><strong>(c) Compliance with Agreement and Laws.</strong> Customer represents that its and its Authorized Users&rsquo; use of the Services will be lawful and consistent with the Service Supplement.</p>
+      <p><strong>(d) Third-Party Misappropriation.</strong> Customer will safeguard the Services from infringement or unauthorized access, promptly notify Minla Labs of any infringement it becomes aware of, and cooperate with any related enforcement action.</p>
+
+      <h4>4. Fees and Payment</h4>
+      <p>Customer will pay the Fees described in the Service Supplement on the payment terms set out there, plus applicable taxes.</p>
+
+      <h4>5. Support and Other Services</h4>
+      <p><strong>(a) SLA.</strong> Minla Labs will use commercially reasonable efforts to provide the Services with a non-binding target of 99.5% monthly availability, subject to scheduled downtime and events outside Minla Labs&rsquo;s reasonable control, including third-party network or utility interruptions, Customer&rsquo;s unavailability to support resolution of an incident, government or regulatory actions, and force majeure events.</p>
+      <p><strong>(b) Support.</strong> Support Services apply to the Services purchased under the Service Supplement and do not cover issues caused by Customer&rsquo;s or third parties&rsquo; own software, network, or systems. Support terms may change at Minla Labs&rsquo;s discretion, but not in a way that materially reduces the level of support provided during a period already paid for. Support is available for the duration of the Service Supplement and includes email support during normal business hours, access to online documentation and tutorials, and SaaS support such as updates, fixes, and security patches. Customer will appoint one or more trained contacts to submit support requests, provide Minla Labs reasonable access to personnel and information needed to diagnose issues, and promptly report and help reproduce any errors. Enhanced or additional support may be available for purchase where offered.</p>
+
+      <h4>6. Intellectual Property</h4>
+      <p><strong>(a) The Services.</strong> Minla Labs owns all right, title, and interest in the Services and any customization or related work product. Any feedback Customer or its personnel send to Minla Labs about the Services becomes Minla Labs&rsquo;s property, and Customer assigns all related rights to Minla Labs, with no obligation on Minla Labs to use it.</p>
+      <p><strong>(b) Customer Data.</strong> Customer retains ownership of all Customer Data, subject to a non-exclusive, worldwide, royalty-free license granted to Minla Labs during the Term to Process, transmit, and disclose Customer Data in order to provide the Services. Customer represents it holds all rights necessary to grant this license. Minla Labs will use Customer Data only to provide the Services, except that it may use anonymized, aggregated Customer Data (with PII removed) to develop, train, and improve its machine learning and AI models and the Services generally.</p>
+
+      <h4>7. Data Security and Privacy</h4>
+      <p>The Parties may be subject to applicable data protection laws, including the GDPR and equivalent UK and Swiss legislation (collectively, &ldquo;Data Protection Legislation&rdquo;). Customer acts as Data Controller and Minla Labs as Data Processor. Both Parties will comply with applicable Data Protection Legislation. Customer is solely responsible for obtaining and conveying all required consents for Customer Data and for its instructions to Minla Labs regarding Processing, and will indemnify Minla Labs against claims arising from Customer&rsquo;s failure to obtain required consents. Minla Labs will Process Customer Data only as instructed (except where law requires otherwise) and will ensure personnel handling Customer Data treat it as Confidential Information. Minla Labs will use reasonable and appropriate security measures to protect Customer Data as described in its Security Addendum.</p>
+
+      <h4>8. Disclaimer</h4>
+      <p>Except as explicitly provided in the Service Supplement, MSA, or these TOS, the Services are provided &ldquo;as is&rdquo; and &ldquo;as available.&rdquo; Minla Labs disclaims all warranties, express or implied, including title, merchantability, non-infringement, fitness for a particular purpose, satisfactory quality, and any warranty arising from a course of dealing, usage, or trade practice.</p>
+      <p>Minla Labs does not warrant that the Services will perform error-free or without interruption; meet any performance or reliability standard; be free from bugs, viruses, or other harmful code, errors, or defects (or that any such issues can or will be corrected); meet Customer&rsquo;s requirements or achieve any intended result; or be compatible with any other software, application, system, or service. Minla Labs has no responsibility or liability for downtime, or for any bodily injury, death, or property damage resulting from use or failure of the Services.</p>
+      <p>Customer acknowledges the Services include AI Functionality, and that there is no warranty that any AI Functionality will operate error-free or that content, data, or results it creates or provides will always be accurate, complete, or suitable for any particular or business purpose &mdash; including due to model bias, hallucinations, and data limitations. Results may be produced by automated, probabilistic decision-making and may not be certain, accurate, or reliable, and may reflect over- or under-confidence. The Services may evolve over time and produce different results, or be subject to different errors, from time to time.</p>
+      <p>Use of any reports, outputs, results, or other material obtained through the Services is at Customer&rsquo;s own discretion and risk; Customer is solely responsible for evaluating and overseeing such material and for any damage to its systems, network, or data resulting from its use. Such material should not be relied upon as the sole basis for any business decision, and Minla Labs has no responsibility or liability for such decisions. No oral or written advice from Minla Labs or its personnel creates any warranty not expressly stated in these TOS, the Service Supplement, or the MSA.</p>
+
+      <h4>9. Infringement Indemnification and Mitigation</h4>
+      <p><strong>(a) Minla Labs Infringement Indemnity.</strong> Minla Labs will defend and indemnify Customer against third-party claims that the Services, used within the scope of the license granted, infringe a patent, trademark, copyright, trade secret, or other IP right, provided that Customer promptly notifies Minla Labs of the claim, does not admit fault or settle without Minla Labs&rsquo;s prior written consent, allows Minla Labs sole control of the defense and settlement (so long as this creates no liability for Customer), and provides reasonable cooperation at Minla Labs&rsquo;s expense. This states Minla Labs&rsquo;s sole liability, and Customer&rsquo;s exclusive remedy, for any claim that the Services infringe a third party&rsquo;s IP rights.</p>
+      <p><strong>(b) Infringement Mitigation.</strong> If such a claim arises, Minla Labs may, at its option, procure continued rights to use the Services, replace or modify the affected component with a non-infringing equivalent, or refund a pro-rated portion of prepaid Fees and require Customer to stop using the Services.</p>
+      <p><strong>(c) Exclusions.</strong> This indemnity does not extend to claims arising from Customer Data, use of the Services outside the scope authorized by this Agreement, or combination of the Services with third-party products not provided by Minla Labs.</p>
+
+      <h4>10. Customer&rsquo;s Indemnification Obligations</h4>
+      <p>Customer will indemnify and hold harmless Minla Labs and its affiliates from third-party claims arising from Customer&rsquo;s or an Authorized User&rsquo;s use or misuse of the Services, violation of the MSA, Service Supplement, or these TOS, Customer Data provided to Minla Labs, or allegations that integrating the Services with Customer&rsquo;s own products infringes a third party&rsquo;s IP rights.</p>
+
+      <h4>11. Limitation of Liability</h4>
+      <p>Minla Labs will not be liable for indirect, consequential, special, incidental, punitive, or exemplary damages, including lost profits, savings, or revenue, regardless of the theory of liability, even if Minla Labs was advised of or could have foreseen such damages, and irrespective of whether a limited remedy fails of its essential purpose. Except for Minla Labs&rsquo;s indemnification obligations under Section 9, Minla Labs&rsquo;s cumulative liability for any claim will not exceed the amount Customer paid in the twelve months preceding the event giving rise to the claim. If any part of this Section is held unenforceable, Minla Labs&rsquo;s liability will instead be limited to the fullest extent permitted by law.</p>
+
+      <h4>12. Term; Early Termination</h4>
+      <p>These TOS commence on the Effective Date and continue for the Initial Term set out in the Service Supplement, renewing as specified there. These TOS and Customer&rsquo;s right to use the Services terminate upon termination of the Service Supplement. Upon termination, any unpaid Fees become immediately due, Customer must immediately cease using the Services, and Minla Labs may disable access; termination does not affect any right or remedy that accrued to Minla Labs before that date, or relieve Customer of any Fees already owed. At Customer&rsquo;s request within 30 days of termination, and subject to payment in full, Minla Labs will provide reasonable assistance transferring Customer Data, but is not obligated to retain Customer Data for more than 90 days after termination, after which it may delete Customer Data, subject to applicable law.</p>
+
+      <h4>13. Confidentiality</h4>
+      <p>Each Party will hold the other&rsquo;s Confidential Information in confidence and use it only to perform the Service Supplement, disclosing it only as required by law after providing notice sufficient to allow the disclosing Party to seek protection. The Services and all related pricing information constitute Minla Labs&rsquo;s Confidential Information.</p>
+
+      <h4>14. Injunctive Relief</h4>
+      <p>A breach of Section 2 by Customer, or of Section 13 by either Party, entitles the non-breaching Party to seek immediate injunctive relief without posting a bond, and Customer agrees not to contest such an application.</p>
+
+      <h4>15. Miscellaneous</h4>
+      <p><strong>(a) Notice.</strong> A notice is deemed given and received when personally delivered in writing; on the day of actual delivery if sent by email with read and delivery receipt requested; one business day after being sent by overnight courier; or three business days after being deposited in the U.S. Mail, registered or certified and postage pre-paid, addressed to the Party&rsquo;s address on the Service Supplement or any updated address given by written notice.</p>
+      <p><strong>(b) Amendment.</strong> These TOS may not be amended except in a writing executed by authorized representatives of both Parties.</p>
+      <p><strong>(c) Assignment.</strong> The Service Supplement is not transferable, assignable, delegable, or sublicensable by Customer, in whole or in part, without Minla Labs&rsquo;s prior written permission. The Service Supplement and these TOS bind and benefit the Parties and their respective successors and assigns.</p>
+      <p><strong>(d) Survival.</strong> Sections 2(b), 2(c), 3, 4, 6, 7, 8, 9, 10, 11, 12, 13 (for five years after termination or expiration), 14, and 15 of these TOS, along with any payment obligations accrued before termination or expiration, survive termination or expiration of these TOS for any reason.</p>
+      <p><strong>(e) Independent Contractor.</strong> Minla Labs and Customer are independent parties and correctly categorized as contractors of one another. Nothing in this Agreement creates any employment, agency, or partnership relationship between the Parties.</p>
+      <p><strong>(f) Binding Effect and Third-Party Beneficiary.</strong> Except as specifically stated in the Service Supplement, neither Party, nor their employees or agents, has the power to bind or obligate the other Party. No third party is a beneficiary of the Service Supplement or these TOS.</p>
+      <p><strong>(g) Waiver of Rights.</strong> Except where stated otherwise, all remedies available to either Party at law, in equity, or under this Agreement are cumulative and non-exclusive. A Party&rsquo;s failure at any time to require the other Party&rsquo;s performance of any provision will not affect its right to require such performance at any later time.</p>
+      <p><strong>(h) Severability.</strong> If any provision of the MSA, the Service Supplement, or these TOS is held invalid or unenforceable in any jurisdiction, that provision will be ineffective in that jurisdiction only to the extent of the unenforceability, without affecting the remaining provisions, which will remain valid and enforceable to the fullest extent permitted by law.</p>
+      <p><strong>(i) Export Control Laws.</strong> The Services are subject to U.S. and other applicable export control laws and regulations. Customer and its Authorized Users will comply with such laws and obtain all required authorizations, permits, or licenses. Customer represents that it is not located in a country subject to U.S. government embargo or designated as terrorist-supporting, and is not listed on any U.S. government list of prohibited or restricted parties.</p>
+      <p><strong>(j) Choice of Law and Venue.</strong> The Service Supplement and these TOS are governed by the laws of the State of California, without regard to conflict-of-law principles. Any suit, action, or proceeding arising out of the Service Supplement, these TOS, or the licenses granted under them must be brought exclusively in the state or federal courts located in Santa Clara County, California, and each Party submits to the exclusive jurisdiction of those courts. Each Party irrevocably waives the right to a jury trial for any claim arising out of or relating to this Agreement, and agrees to bring claims only on an individual basis, not as a plaintiff or class member in any class or representative action.</p>
+      <p><strong>(k) Force Majeure.</strong> Minla Labs will not be in default or breach of these TOS for any failure or delay in performance caused by events beyond its reasonable control, including internet or telecommunications breakdowns, denial-of-service attacks, fire, flood, earthquake or other natural events, war, terrorism, civil unrest, strikes, or third-party or supplier failure.</p>
+      <p><strong>(l) Entire Agreement.</strong> These TOS, together with the MSA and the Service Supplement, constitute the entire agreement of the Parties regarding their subject matter and supersede all prior or contemporaneous negotiations or agreements on that subject matter.</p>
+      <p><strong>(m) Conflict of Terms.</strong> If there is any inconsistency between these TOS and a Service Supplement, the Service Supplement will govern and control.</p>
+
       <h4>Contact</h4>
-      <p>Privacy questions go to <a href="mailto:sid@minlalabs.com">sid@minlalabs.com</a>. As Minla moves toward general availability, we&rsquo;ll publish a complete privacy policy and security overview covering data handling for the live product.</p>
+      <p>Questions about these terms can be sent to <a href="mailto:hello@minlalabs.com">hello@minlalabs.com</a>.</p>
     </div>
   </div>
 </div>
 
 <script>
-  // ── Contact modal ──
-  const contactOverlay = document.getElementById('contactModal');
-  const openContactBtn = document.getElementById('openContactBtn');
-  const closeContactBtn = document.getElementById('closeContactBtn');
-
-  function openContactModal() {
-    contactOverlay.style.display = 'flex';
-    requestAnimationFrame(() => contactOverlay.classList.add('open'));
-  }
-
-  function closeContactModal() {
-    contactOverlay.classList.remove('open');
-    setTimeout(() => { contactOverlay.style.display = 'none'; }, 300);
-  }
-
-  openContactBtn.addEventListener('click', openContactModal);
-  closeContactBtn.addEventListener('click', closeContactModal);
-  contactOverlay.addEventListener('click', e => { if (e.target === contactOverlay) closeContactModal(); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeContactModal(); });
-
-  // ── Contact form submission ──
-  const contactForm       = document.getElementById('contactForm');
-  const contactSubmitBtn  = document.getElementById('contactSubmitBtn');
-  const contactError      = document.getElementById('contactError');
-  const contactSuccess    = document.getElementById('contactSuccess');
-
-  contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    contactError.style.display = 'none';
-    contactSubmitBtn.disabled = true;
-    contactSubmitBtn.textContent = 'Sending…';
-
-    fetch(contactForm.action, {
-      method: 'POST',
-      body: new FormData(contactForm),
-      headers: { 'Accept': 'application/json' }
-    })
-    .then(r => {
-      if (r.ok) {
-        contactForm.style.display = 'none';
-        contactSuccess.style.display = 'block';
-      } else { throw new Error(); }
-    })
-    .catch(() => {
-      contactError.style.display = 'block';
-      contactSubmitBtn.disabled = false;
-      contactSubmitBtn.textContent = 'Get in touch';
-    });
-  });
-
-  // ── Info modals (Terms / Privacy) ──
+  // ── Info modal (Terms) ──
   function openInfoModal(el) {
     el.style.display = 'flex';
     requestAnimationFrame(() => el.classList.add('open'));
