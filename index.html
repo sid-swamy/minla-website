@@ -9,18 +9,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,300;9..144,0,400;9..144,1,300;9..144,1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --cream: #FAFAF9;
-    --navy: #111827;
-    --rust: #E85D4A;
-    --gray: #6B7280;
-    --line: rgba(17,24,39,0.08);
+    --cream: #F7F4EC;
+    --navy: #16223B;
+    --rust: #B5502E;
+    --gray: #7A7A72;
+    --line: rgba(22,34,59,0.1);
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   html, body {
     background: var(--cream);
-    background-image: radial-gradient(rgba(17,24,39,0.05) 1px, transparent 1px);
+    background-image: radial-gradient(rgba(22,34,59,0.09) 1px, transparent 1px);
     background-size: 26px 26px;
     color: var(--navy);
     font-family: 'Inter', sans-serif;
@@ -106,7 +106,7 @@
     font-size: clamp(15px, 3.4vw, 19px);
     font-weight: 400;
     line-height: 1.6;
-    color: rgba(17,24,39,0.75);
+    color: rgba(22,34,59,0.8);
     letter-spacing: 0.005em;
     text-wrap: pretty;
   }
@@ -151,7 +151,7 @@
     color: var(--rust);
     font-weight: 600;
     text-decoration: none;
-    border-bottom: 1px solid rgba(232,93,74,0.3);
+    border-bottom: 1px solid rgba(181,80,46,0.4);
     padding: 0.3rem 0.1rem;
     transition: border-color 0.2s ease, color 0.2s ease;
   }
@@ -164,7 +164,7 @@
   .modal-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(17,24,39,0.4);
+    background: rgba(22,34,59,0.38);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     display: none;
@@ -188,7 +188,7 @@
     max-width: 400px;
     width: 100%;
     text-align: left;
-    box-shadow: 0 32px 80px rgba(17,24,39,0.12);
+    box-shadow: 0 32px 80px rgba(22,34,59,0.18);
     position: relative;
     transform: translateY(16px);
     transition: transform 0.35s ease;
@@ -256,7 +256,7 @@
     font-weight: 500;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: rgba(17,24,39,0.6);
+    color: rgba(22,34,59,0.6);
     cursor: pointer;
     transition: color 0.2s ease;
   }
@@ -267,7 +267,7 @@
     font-size: 11px;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: rgba(107,114,128,0.6);
+    color: rgba(122,122,114,0.6);
     white-space: nowrap;
   }
 
@@ -311,7 +311,7 @@
   .info-modal .modal-body a {
     color: var(--rust);
     text-decoration: none;
-    border-bottom: 1px solid rgba(232,93,74,0.25);
+    border-bottom: 1px solid rgba(181,80,46,0.35);
   }
 
   .info-modal .mailto-btn {
@@ -377,12 +377,7 @@
   <div class="main-content">
 
   <div class="logo-wrap">
-    <img
-      src="data:image/webp;base64,UklGRl7pAgBXRUJQVlA4WAoAAAAQAAAAtgcAPwIAQUxQSIBxAQABxoHQRpIkKTMqmj/ob3fvCETEBOTrTTg2mYE8d89vqz2qM5XHUe7fCx6jhQ/ah97acozsKoAK5J3XqhzHmUn1UoDYQhXq3nar6kw8JgB1Z0/rE[...]
-      alt="Minla Labs"
-      width="1975"
-      height="576"
-    >
+    <img src="logo.svg" alt="Minla Labs" width="1975" height="576">
   </div>
 
   <div class="headline">
